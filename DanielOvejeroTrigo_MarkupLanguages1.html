@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Markup Languages project documentation template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    </head>
+    <body>
+        <header>
+            <h1>Markup Languages project documentation</h1>
+        </header>
+        <section>
+            <article>
+                <header><h2>Table of Contents</h2></header>
+            
+            <!-- This list may be modified in the future. -->
+            <nav>
+                <ol>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#metho">Methodology</a></li>
+                    <li><a href="#wcntnt">Work Content</a></li>
+                    <li><a href="#eldesc">Elements Description</a></li>
+                    <li><a href="#transdesc">Transformation Description</a></li>
+                    <li><a href="#conc">Conclusion</a></li>
+                </ol>
+            </nav>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2 id="intro">Introduction</h2>
+                </header>
+
+                <p>This project consists on an XML file, with the XML schema and the transformation document to html.<br>
+                It's the inforation about settings and preferences of five different users in a storage application. In this application,
+                there are two kinds of accounts, accounts type "A" in which the user has social network and storage up until the amount of 
+                data that it's set for each one of them or "B" that only permits the user to share information in social media.</p>
+                <p>In the storage application the programming has been made differing between two bigger parts that are the information about the user
+                and the account that has and another part that's oriented for the settings and preferences that this user will have in his
+                account minding the position of the elements and the colours to display the interface.</p>
+            </article>
+            <hr>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2 id="metho">Methodology</h2>
+                    <p>The methodology used has followed the pattern of anidated tags with elements that contain other elements.<br>
+                    This clasification is the one that most configuration pages have. It consists on a menu divided in some parts that have a certain
+                    amount of elements. These are the tags that appear after "settings".<br> Then it's the tags the ones that can contain others,
+                    that's because in the menu there are elements and options that are only reachable after clicking on the element.<br>
+                    </p>
+                    <p>In this project we've made the xml anidating tags after tags basically creating 5 groups of tags in 2 big groups. Those
+                        two big groups are the information part, where it's displayed the information about the user and the settings part where there
+                        are all the preferences and conditions of the account the user has.<br>About the small groups, there are five small groups, one 
+                        concerning identification, where we have all the information about the user, "account", which is the one where the information
+                        regarding the kind of account the user has. These are the ones that are contained in "information".</p>
+                    <p>
+                        After this we have the groups of tags that are stored in settings, which are social settings, storagesettings, sendingsettings
+                        and displaysettings.<br>Social settings take care of the information regarding who can watch and who cannot watch our users information.
+                        <br> Storage settings control the formats, connections and formats that the storage can have, of course, if available. <br>
+                        Sending Settings controls the connections between the email and notification to the user's phone.<br>
+                        Display settings are the settings related to the information about how the user's interaction with the app is displayed. It shows 
+                        where to put the information, colours and location of the different elements that are in a normal interface.
+                    </p>
+                    <p>In the information regarding the schema the used style is the russian doll design because it's the most clear one and the one that's
+                        easier to understand from a readers point of view. <br> It's also more logical and easier to programme since it follows the same
+                        order as in the xml declaration.</p>
+                </header>
+            </article>
+            <hr>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2 id="wcntnt">Work Content</h2>
+                </header>
+
+                    <p>The project has been stored in the following GITHUB repository:</p>
+                    <nav>
+                        <ul>
+                            <li> <a href="https://github.com/DanielOvejero/Markup-Languages-Project.git">Repository in GitHUB.</a></li>
+                        </ul>
+                    </nav>
+                    <p>This project was created as a HTML5 project and it has the files "project", "projectschema" and "project_transformation" inside the 
+                    HTML5 folder.</p>
+                    <p>The project file it's the XML with all the information that is used for the transformation. It has 50 elements, 12 attributes
+                    and 5 different records.</p>
+                    <p>In the projectschema file there's the schema of the XML file, done in a russian doll approach.</p>
+                    <p>The project_transformation has the transformation of the XML into HTML. It's configured so it displays basic 
+                    information about the user regarding its name, account number, phone, etc.</p>
+                    <p>Finally there's this file where all the information about the project is stored and showed.</p>
+            </article>
+            
+            <hr>
+        </section>
+         <section>
+              <article>
+                 <header>
+                    <h2 id="eldesc">Elements Description</h2>
+                 </header>
+
+                     <p>All elements that are contained on the project are displayed in the following table:</p>
+                <table border="1">
+                    <tr>
+                        <th>Element</th><th>Description</th><th>Tags that precede this one</th>
+                    </tr>
+                    <tr>
+                        <td>application</td><td>Main element that contains all the rest.</td><td>This element is not contained anywhere.</td>
+                    </tr>
+                    <tr>
+                        <td>user</td><td>Main division of the project, contains all the information that's repeated for each user.</td><td>applications</td>
+                    </tr>
+                    <tr>
+                        <td>information</td><td>Tag that contains all the information about the users account.</td><td>user</td>
+                    </tr>
+                    <tr>
+                        <td>identification</td><td>Tag that contains all information regarding the user's personal data</td><td>information</td>
+                    </tr>
+                    <tr>
+                        <td>firstname</td><td>Element that has the first name of the user.</td><td>identification</td>
+                    </tr>
+                    <tr>
+                        <td>middlename</td><td>Element that has the middle name of the user</td><td>identification</td>
+                    </tr>
+                    <tr>
+                        <td>lastname</td><td>Element that has the last name of the user</td><td>identification</td>
+                    </tr>
+                    <tr>
+                        <td>emailaddress</td><td>Address of email without the dominion that the user has</td><td>identification</td>
+                    </tr>
+                    <tr>
+                        <td>emaildominion</td><td>Dominion of the email of the user</td><td>indentification</td>
+                    </tr>
+                    <tr>
+                        <td>account</td><td>Tag that contains all information about the account</td><td>information</td>
+                    </tr>
+                    <tr>
+                        <td>number</td><td>Number of the account the user has</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>storage</td><td>Information about the amount of information that the user can store</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>insuspension</td><td>This tag shows if the user's account is going to be suspended or not</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>validfor</td><td>This tag shows for how much time is the account valid for</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>monthlyfee</td><td>It shows how much does the user have to pay</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>servermacaddresss</td><td>Shows the mac address of the server they have the info stored in</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>payingthrough</td><td>This element displays the way the users pay for their storage</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>phone</td><td>This element contains the phone number of the user</td><td>account</td>
+                    </tr>
+                    <tr>
+                        <td>settings</td><td>Tag that contains all the further ones and defines the settings of the aplication</td><td>user</td>                    
+                    </tr>
+                    <tr>
+                        <td>socialsettings</td><td>Shows the information about who can and who cannot see the profile</td><td>settings</td>                    
+                    </tr>
+                    <tr>
+                        <td>language</td><td>It shows the language the app is showed in</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showto</td><td>This element contains the information related to who can see the user's profile</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>picturesshowto</td><td>It's an element that shows who can see the user's pictures</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>videosshowto</td><td>It's an element that shows who can see the user's videos</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>location</td><td>It's an element that shows the user's location</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>city</td><td>It's an element that shows the user's state</td><td>location</td>                    
+                    </tr>
+                    <tr>
+                        <td>state</td><td>It's an element that shows the user's state</td><td>location</td>                    
+                    </tr>
+                    <tr>
+                        <td>country</td><td>It's an element that shows the user's country</td><td>location</td>                    
+                    </tr>
+                    <tr>
+                        <td>showlocationto</td><td>It's an element that shows who can see the user's location</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showbiographyto</td><td>It's an element that shows who can see the user's biography</td><td>socialsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>storagesettings</td><td>It shows the storage settings of the user's account if active</td><td>settings</td>                    
+                    </tr>
+                     <tr>
+                        <td>isstorageactive</td><td>It displays whether the user's storage is active or not</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>formatspermitted</td><td>It displays which formats can be uploaded to the user's acocunt</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>connectedtorepo</td><td>It stores the information regarding the repository that's connected to the 
+                        user's account</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>tellpercentageoffull1when</td><td>It shows when the we're getting notice of how full is the user's account</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>tellpercentageoffull2when</td><td>It shows when the we're getting notice of how full is the user's account</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>tellpercentageoffull3when</td><td>It shows when the we're getting notice of how full is the user's account</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>blockwhen</td><td>It shows when we're blocking further uploads of the user because their account is full</td><td>storagesettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>sendingsettings</td><td>It shows how and where do we send information to the user</td><td>settings</td>                    
+                    </tr>
+                    <tr>
+                        <td>sendnoticeofunusualuse</td><td>It shows if we have to send information when the account is logged in from somewhere unusual
+                        </td><td>sendingsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>procedenceofdata</td><td>It shows where can we store data from (phone or computer)
+                        </td><td>sendingsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>joinaccountwith</td><td>This tag has information regarding the accounts of the user that are joined with this one
+                        </td><td>sendingsettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>displaysettings</td><td>This element contains information about how the application is displayed to the user
+                        </td><td>settings</td>                    
+                    </tr>
+                    <tr>
+                        <td>maincolor</td><td>It shows the main color of the app interface</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>secondcolor</td><td>It shows the second color of the app interface</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>logoonthe</td><td>It shows where the app logo is going to be showed</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>pictureonthe</td><td>It shows where the user's profile picture is going to be showed</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showwelcomepanel</td><td>It shows if we're showing the welcome panel or not and which
+                        welcome panel are we usings</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showclosingpanel</td><td>This tag shows if we're showing the closing panel or not and with which template</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showpictureslike</td><td>Element that shows how the pictures of the app are going to be showed</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showvideoslike</td><td>Element that shows how the videos of the app are going to be showed</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>showaudioslike</td><td>Element that shows how the audios of the app are going to be showed</td><td>displaysettings</td>                    
+                    </tr>
+                    <tr>
+                        <td>toolbaris</td><td>Element that shows where the toolbar of the app is going to be</td><td>displaysettings</td>                    
+                    </tr>
+                </table>
+             </article>
+            <hr>
+        </section>
+         <section>
+             <article>
+                 <header>
+                    <h2 id="transdesc">Transformation Description</h2>
+                 </header>
+             
+                 <p>Regarding the transformation, it was done displaying very basic information about the user, mainly the name, the 
+                 identification, how do the users pay and if the account is active and for how long.</p>
+                 <p>The data is showed divided in two parts, the first one is the information regarding the names, contact, location and state of 
+                 the account. The second part has the information related to the account number, the payments that are necessary for keeping
+                 the account and the way the user pays for the account.</p>
+                 <p>It also has a title that has the username of the user that comes from the attribute that was used to identify
+                 every user in the transformation, and it's the element that defines the different users that we have.</p>
+                
+             </article>
+            <hr>
+        </section>
+         <section>
+             <article>
+                 <header>
+                    <h2 id="conc">Conclusion</h2>
+                 </header>
+                 <p>During this project the elaboration of the XML was easy with all the knowledge that we got from the classes.</p>
+                <p>Interestingly, the  most difficult part about this project has been the transformation, it had a lot of problems
+                that were difficult to solve. In fact it was not possible to solve the last one that is that when displaying the information
+                it displays the information about the first user 5 times when it should change but after much thinking and consulting online
+                it was not possible to find a solution to that problem.</p>
+                <p>The information regarding the database was an example I could think about, I'm not sure it was the best approach to the
+                chosen topic but it definetly covers the concept of an application settings and preferences. Sometimes it was difficult
+                to think about how many attributes could there be when coding about an app settings preferences and therefore there are
+                some of them that can seem useless like the percentages of storage that are full when they give notice to the user.</p>
+                
+             </article>
+            <hr>
+        </section>
+        <footer>
+            <address>
+                <a href="mailto:daniel.ovejero.trigo@alumnos.upm.es">Daniel Ovejero Trigo</a><br>
+                daniel.ovejero.trigo@alumnos.upm.es                    
+            </address>    
+        </footer>
+    </body>
+</html>

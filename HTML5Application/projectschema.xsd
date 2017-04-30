@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+<!-- schema made through russian doll style-->
+  <xs:element name="applications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="user">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="information"> <!-- information contains both
+              the information for the user identification and the account information-->
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="identification">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="firstname"/>
+                          <xs:element type="xs:string" name="middlename"/>
+                          <xs:element type="xs:string" name="lastname"/>
+                          <xs:element type="xs:string" name="emailaddress"/>
+                          <xs:element type="xs:string" name="emaildominion"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="account">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="number">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:float">
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="storage">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:byte">
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="monthlyfee">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:byte">
+                                  <xs:attribute type="xs:string" name="active" use="optional"/>
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="insuspension">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="validfor">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:byte">
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="servermacaddress"/>
+                          <xs:element name="payingthrough">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="mode" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="phone"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="settings">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="socialsettings">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="language"/>
+                          <xs:element type="xs:string" name="showto"/>
+                          <xs:element type="xs:string" name="picturesshowto"/>
+                          <xs:element type="xs:string" name="videosshowto"/>
+                          <xs:element name="location">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="city"/>
+                                <xs:element type="xs:string" name="state"/>
+                                <xs:element type="xs:string" name="country"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="showlocationto"/>
+                          <xs:element type="xs:string" name="showbiographyto"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="storagesettings">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="isstorageactive">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="formatspermitted"/>
+                          <xs:element name="connectedtorepo">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="tellpercentageoffull1when"/>
+                          <xs:element type="xs:string" name="tellpercentageoffull2when"/>
+                          <xs:element type="xs:string" name="tellpercentageoffull3when"/>
+                          <xs:element type="xs:string" name="blockuploadswhen"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="sendingsettings">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="sendnoticeofunusualuse">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="procedenceofdata"/>
+                          <xs:element type="xs:string" name="joinaccountwith"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="displaysettings">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="maincolor"/>
+                          <xs:element type="xs:string" name="secondcolor"/>
+                          <xs:element type="xs:string" name="logoonthe"/>
+                          <xs:element type="xs:string" name="pictureonthe"/>
+                          <xs:element name="showwelcomepanel">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="showclosingpanel">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:boolean" name="active" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="showpictureslike"/>
+                          <xs:element type="xs:string" name="showvideoslike"/>
+                          <xs:element type="xs:string" name="showaudioslike"/>
+                          <xs:element type="xs:string" name="toolbaris"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

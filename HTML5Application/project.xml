@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<applications>
+    <user id="markjones">
+        <information>
+            <identification>
+                <firstname>Mark</firstname>
+                <middlename>William</middlename>
+                <lastname>Jones</lastname>
+                <emailaddress>mark.jones87</emailaddress>
+                <emaildominion>hotmail.co.au</emaildominion>
+
+            </identification>
+            <account>
+                <number type="a">125.254</number>
+                <storage type="GB">50</storage>
+                <monthlyfee active="true" type="euro">20</monthlyfee>
+                <insuspension active="false">Not suspended</insuspension>
+                <validfor type="year">5</validfor>
+                <servermacaddress>4a.6d.7c.8d</servermacaddress>
+                <payingthrough mode="bankaccount">4521.5555.4741.7878</payingthrough>
+                <phone>874547587</phone>
+            </account>
+        </information>
+        <settings>
+            <socialsettings>
+                <language>English</language>
+                <showto>public</showto>
+                <picturesshowto>public</picturesshowto>
+                <videosshowto>friends</videosshowto>
+                <location>
+                    <city>Melbourne</city>
+                    <state>Victoria</state>
+                    <country>Australia</country>
+                </location>
+                <showlocationto>public</showlocationto>
+                <showbiographyto>friends</showbiographyto>
+            </socialsettings>
+            <storagesettings>
+                <isstorageactive active="true"/>
+                <formatspermitted>PDF,doc, ppt,cpp</formatspermitted>
+                <connectedtorepo active="true">www.github.com/markjones/258741a</connectedtorepo>
+                <tellpercentageoffull1when>25%</tellpercentageoffull1when>
+                <tellpercentageoffull2when>50%</tellpercentageoffull2when>
+                <tellpercentageoffull3when>75%</tellpercentageoffull3when>
+                <blockuploadswhen>95%</blockuploadswhen>
+            </storagesettings>
+            <sendingsettings>
+                <sendnoticeofunusualuse active="true">Normal email and text to phone.</sendnoticeofunusualuse>
+                <procedenceofdata>Computer and phone app.</procedenceofdata>
+                <joinaccountwith>Phone number and email.</joinaccountwith>
+            </sendingsettings>
+            <displaysettings>
+                <maincolor>Blue</maincolor>
+                <secondcolor>Yellow</secondcolor>
+                <logoonthe>right</logoonthe>
+                <pictureonthe>left</pictureonthe>
+                <showwelcomepanel active="true">Birds template.</showwelcomepanel>
+                <showclosingpanel active="false">Trees template.</showclosingpanel>
+                <showpictureslike>Mosaic.</showpictureslike>
+                <showvideoslike>List.</showvideoslike>
+                <showaudioslike>List.</showaudioslike>
+                <toolbaris>Up.</toolbaris>
+            </displaysettings>
+        </settings>
+    </user>
+    <user id="liamgalahan">
+        <information>
+            <identification>
+                <firstname>Liam</firstname>
+                <middlename>George</middlename>
+                <lastname>Galahan</lastname>
+                <emailaddress>liamgal93</emailaddress>
+                <emaildominion>hotmail.co.au</emaildominion>
+
+            </identification>
+            <account>
+                <number type="b">135.244</number>
+                <storage type="GB">50</storage>
+                <monthlyfee active="false" type="euro">0</monthlyfee>
+                <insuspension active="false">Not suspended</insuspension>
+                <validfor type="year">9</validfor>
+                <servermacaddress>4a.4d.7a.8d</servermacaddress>
+                <payingthrough mode="none">-</payingthrough>
+                <phone>874147587</phone>
+            </account>
+        </information>
+        <settings>
+            <socialsettings>
+                <language>English</language>
+                <showto>public</showto>
+                <picturesshowto>friends</picturesshowto>
+                <videosshowto>friends</videosshowto>
+                <location>
+                    <city>Adelaide</city>
+                    <state>South Australia</state>
+                    <country>Australia</country>
+                </location>
+                <showlocationto>public</showlocationto>
+                <showbiographyto>friends</showbiographyto>
+            </socialsettings>
+            <storagesettings>
+                <isstorageactive active="false"/>
+                <formatspermitted>PDF,doc, ppt,cpp</formatspermitted>
+                <connectedtorepo active="false">-</connectedtorepo>
+                <tellpercentageoffull1when>25%</tellpercentageoffull1when>
+                <tellpercentageoffull2when>50%</tellpercentageoffull2when>
+                <tellpercentageoffull3when>75%</tellpercentageoffull3when>
+                <blockuploadswhen>95%</blockuploadswhen>
+            </storagesettings>
+            <sendingsettings>
+                <sendnoticeofunusualuse active="true">Normal email and text to phone.</sendnoticeofunusualuse>
+                <procedenceofdata>Computer and phone app.</procedenceofdata>
+                <joinaccountwith>Phone number.</joinaccountwith>
+            </sendingsettings>
+            <displaysettings>
+                <maincolor>Blue</maincolor>
+                <secondcolor>White</secondcolor>
+                <logoonthe>right</logoonthe>
+                <pictureonthe>left</pictureonthe>
+                <showwelcomepanel active="true">Birds template.</showwelcomepanel>
+                <showclosingpanel active="true">City template.</showclosingpanel>
+                <showpictureslike>Mosaic.</showpictureslike>
+                <showvideoslike>Mosaic.</showvideoslike>
+                <showaudioslike>List.</showaudioslike>
+                <toolbaris>Up.</toolbaris>
+            </displaysettings>
+        </settings>
+    </user>
+      <user id="victoriacaulfield">
+        <information>
+            <identification>
+                <firstname>Victoria</firstname>
+                <middlename>Violet</middlename>
+                <lastname>Caulfield</lastname>
+                <emailaddress>vicaulfield</emailaddress>
+                <emaildominion>hotmail.ca</emaildominion>
+
+            </identification>
+            <account>
+                <number type="a">785.254</number>
+                <storage type="GB">50</storage>
+                <monthlyfee active="true" type="dollar">20</monthlyfee>
+                <insuspension active="false">Not suspended</insuspension>
+                <validfor type="year">8</validfor>
+                <servermacaddress>7v.6d.7c.8d</servermacaddress>
+                <payingthrough mode="bankaccount">3975.5555.4741.7878</payingthrough>
+                <phone>115547587</phone>
+            </account>
+        </information>
+        <settings>
+            <socialsettings>
+                <language>English</language>
+                <showto>public</showto>
+                <picturesshowto>public</picturesshowto>
+                <videosshowto>friends</videosshowto>
+                <location>
+                    <city>Vancouver</city>
+                    <state>British Columbia</state>
+                    <country>Canada</country>
+                </location>
+                <showlocationto>public</showlocationto>
+                <showbiographyto>friends</showbiographyto>
+            </socialsettings>
+            <storagesettings>
+                <isstorageactive active="true"/>
+                <formatspermitted>PDF,doc, ppt,cpp</formatspermitted>
+                <connectedtorepo active="true">www.github.com/vicaulfield/741741a</connectedtorepo>
+                <tellpercentageoffull1when>25%</tellpercentageoffull1when>
+                <tellpercentageoffull2when>50%</tellpercentageoffull2when>
+                <tellpercentageoffull3when>75%</tellpercentageoffull3when>
+                <blockuploadswhen>95%</blockuploadswhen>
+            </storagesettings>
+            <sendingsettings>
+                <sendnoticeofunusualuse active="true">Normal email and text to phone.</sendnoticeofunusualuse>
+                <procedenceofdata>Computer and phone app.</procedenceofdata>
+                <joinaccountwith>Phone number and email.</joinaccountwith>
+            </sendingsettings>
+            <displaysettings>
+                <maincolor>White</maincolor>
+                <secondcolor>Yellow</secondcolor>
+                <logoonthe>right</logoonthe>
+                <pictureonthe>left</pictureonthe>
+                <showwelcomepanel active="false">Birds template.</showwelcomepanel>
+                <showclosingpanel active="false">Trees template.</showclosingpanel>
+                <showpictureslike>Mosaic.</showpictureslike>
+                <showvideoslike>List.</showvideoslike>
+                <showaudioslike>List.</showaudioslike>
+                <toolbaris>Up.</toolbaris>
+            </displaysettings>
+        </settings>
+    </user>
+      <user id="mizukihimoto">
+        <information>
+            <identification>
+                <firstname>Mizuki</firstname>
+                <middlename>-</middlename>
+                <lastname>Himoto</lastname>
+                <emailaddress>mizukimoto</emailaddress>
+                <emaildominion>gmail.com</emaildominion>
+
+            </identification>
+            <account>
+                <number type="a">741.254</number>
+                <storage type="TB">50</storage>
+                <monthlyfee active="true" type="euro">40</monthlyfee>
+                <insuspension active="false">Not suspended</insuspension>
+                <validfor type="month">5</validfor>
+                <servermacaddress>5p.6d.7c.8d</servermacaddress>
+                <payingthrough mode="bankaccount">3574.5555.4741.7878</payingthrough>
+                <phone>321047587</phone>
+            </account>
+        </information>
+        <settings>
+            <socialsettings>
+                <language>Japanese</language>
+                <showto>friends</showto>
+                <picturesshowto>friends</picturesshowto>
+                <videosshowto>myself</videosshowto>
+                <location>
+                    <city>Nagoya</city>
+                    <state>Nagoya</state>
+                    <country>Japan</country>
+                </location>
+                <showlocationto>public</showlocationto>
+                <showbiographyto>friends</showbiographyto>
+            </socialsettings>
+            <storagesettings>
+                <isstorageactive active="true"/>
+                <formatspermitted>PDF,doc, ppt,cpp</formatspermitted>
+                <connectedtorepo active="false">-</connectedtorepo>
+                <tellpercentageoffull1when>25%</tellpercentageoffull1when>
+                <tellpercentageoffull2when>50%</tellpercentageoffull2when>
+                <tellpercentageoffull3when>75%</tellpercentageoffull3when>
+                <blockuploadswhen>95%</blockuploadswhen>
+            </storagesettings>
+            <sendingsettings>
+                <sendnoticeofunusualuse active="true">Normal email and text to phone.</sendnoticeofunusualuse>
+                <procedenceofdata>Computer and phone app.</procedenceofdata>
+                <joinaccountwith>Phone number and email.</joinaccountwith>
+            </sendingsettings>
+            <displaysettings>
+                <maincolor>Pink</maincolor>
+                <secondcolor>Yellow</secondcolor>
+                <logoonthe>left</logoonthe>
+                <pictureonthe>right</pictureonthe>
+                <showwelcomepanel active="true">Birds template.</showwelcomepanel>
+                <showclosingpanel active="true">Birds template.</showclosingpanel>
+                <showpictureslike>Mosaic.</showpictureslike>
+                <showvideoslike>List.</showvideoslike>
+                <showaudioslike>List.</showaudioslike>
+                <toolbaris>Up.</toolbaris>
+            </displaysettings>
+        </settings>
+    </user>
+      <user id="helenaschweiser">
+        <information>
+            <identification>
+                <firstname>Helena</firstname>
+                <middlename>Dorothea</middlename>
+                <lastname>Schweiser</lastname>
+                <emailaddress>hdschweiser</emailaddress>
+                <emaildominion>gmail.com</emaildominion>
+
+            </identification>
+            <account>
+                <number type="b">854.254</number>
+                <storage type="MB">50</storage>
+                <monthlyfee active="false" type="euro">0</monthlyfee>
+                <insuspension active="false">Not suspended</insuspension>
+                <validfor type="year">0</validfor>
+                <servermacaddress>75.6d.7c.8d</servermacaddress>
+                <payingthrough mode="bankaccount">4521.5555.4741.7878</payingthrough>
+                <phone>007847587</phone>
+            </account>
+        </information>
+        <settings>
+            <socialsettings>
+                <language>German</language>
+                <showto>public</showto>
+                <picturesshowto>public</picturesshowto>
+                <videosshowto>friends</videosshowto>
+                <location>
+                    <city>Dresden</city>
+                    <state>Sachen</state>
+                    <country>Germany</country>
+                </location>
+                <showlocationto>public</showlocationto>
+                <showbiographyto>friends</showbiographyto>
+            </socialsettings>
+            <storagesettings>
+                <isstorageactive active="true"/>
+                <formatspermitted>PDF,doc, ppt,cpp</formatspermitted>
+                <connectedtorepo active="true">www.github.com/schwhd/87414</connectedtorepo>
+                <tellpercentageoffull1when>25%</tellpercentageoffull1when>
+                <tellpercentageoffull2when>50%</tellpercentageoffull2when>
+                <tellpercentageoffull3when>75%</tellpercentageoffull3when>
+                <blockuploadswhen>95%</blockuploadswhen>
+            </storagesettings>
+            <sendingsettings>
+                <sendnoticeofunusualuse active="false">-</sendnoticeofunusualuse>
+                <procedenceofdata>Computer and phone app.</procedenceofdata>
+                <joinaccountwith>Phone number and email.</joinaccountwith>
+            </sendingsettings>
+            <displaysettings>
+                <maincolor>Red</maincolor>
+                <secondcolor>Black</secondcolor>
+                <logoonthe>right</logoonthe>
+                <pictureonthe>left</pictureonthe>
+                <showwelcomepanel active="true">Birds template.</showwelcomepanel>
+                <showclosingpanel active="false">Trees template.</showclosingpanel>
+                <showpictureslike>Mosaic.</showpictureslike>
+                <showvideoslike>List.</showvideoslike>
+                <showaudioslike>List.</showaudioslike>
+                <toolbaris>Up.</toolbaris>
+            </displaysettings>
+        </settings>
+    </user>
+</applications>
